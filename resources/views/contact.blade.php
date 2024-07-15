@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    <h1>Contact View</h1>
-    <div>
+<x-layout>
+
+<!-- Xslot ini untuk memanggil variabel yang dikirim dari route. lalu dilempar pada bagian layout -->
+<x-slot:title>{{$title}}</x-slot>
+welcome my Contact
+<x-slot:nyut>{{$nyut}}</x-slot>
+<div>
+    <h3> baru</h3>
+</div>
+<div>
         <table border="3">
             <th>
                 <td>Identitas</td>
@@ -28,5 +28,4 @@
             </tbody>
         </table>
     </div>
-</body>
-</html>
+</x-layout>
